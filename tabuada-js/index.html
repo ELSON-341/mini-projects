@@ -7,7 +7,26 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js" defer></script>
 </head>
-<body>
-    <h1>Digite o número e confirme para gerar uma tabuada</h1>
+<body>    
+    <h1>Digite o número e confirme para gera uma tabuada</h1>
+    <form>
+        <div id="inputs">
+            <div id="left">
+                <label for="start">Tabuada do:</label>
+                <input type="number" name="start" id="start">
+            </div>
+            <div id="right">
+                <label for="start">Mulplicar até:</label>
+                <input type="number" name="start" id="start">
+            </div>
+        </div>
+        <input type="submit" value="Calcular">
+    </form>
+    <div id="mutiplication-table">
+        <h2>Tabuada do número: <span></span></h2>
+        <div id="result">
+            <p>Informe um número para calcular uma tabuada...</p>
+        </div>
+    </div>
 </body>
 </html>

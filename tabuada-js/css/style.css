@@ -1,0 +1,82 @@
+@charset "UTF-8";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(../img/bg-img.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+h1 {
+    margin: 20px;
+    color: white;
+}
+
+form {
+    background-color: white;
+    padding: 20px 4rem;
+    border-radius: 10px;
+    margin: 20px;
+    backdrop-filter: blur(50%);
+}
+
+div#inputs {
+ display: flex;
+ gap: 70px;
+}
+
+input, label {
+    display: block;
+}
+
+input {
+    width: 100px;
+    margin-top: 7px;
+    padding: 14px;
+    font-size: 17px;
+    border-radius: 5px;
+}
+input[type="submit"] {
+    display: block;
+    margin: 10px auto;
+    background-color: #000;
+    color: white;
+    width: 100%;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+opacity: 0.9;
+}
+
+div#mutiplication-table h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: white;
+}
+
+div#mutiplication-table {
+
+}
+div#result {
+    background-color: white;
+    width: 400px;
+    height: 100px;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+div#result p{
+    text-align: center;
+    font-size: 17px;
+}
