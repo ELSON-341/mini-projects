@@ -8,23 +8,21 @@
     <script src="js/script.js" defer></script>
 </head>
 <body>    
-    <h1>Digite o número e confirme para gera uma tabuada</h1>
+    <h2>Digite o número e confirme para gera uma tabuada</h2>
     <form>
-        <div id="inputs">
-            <div id="left">
+            <div class="inputs">
                 <label for="start">Tabuada do:</label>
-                <input type="number" name="start" id="start">
+                <input type="number" name="start" id="start" placeholder="3" required>
             </div>
-            <div id="right">
+            <div class="inputs">
                 <label for="start">Mulplicar até:</label>
-                <input type="number" name="start" id="start">
-            </div>
+                <input type="number" name="start" id="start" value="10">
         </div>
         <input type="submit" value="Calcular">
     </form>
-    <div id="mutiplication-table">
+    <div id="multiplication-table">
         <h2>Tabuada do número: <span></span></h2>
-        <div id="result">
+        <div id="multiplication-operations">
             <p>Informe um número para calcular uma tabuada...</p>
         </div>
     </div>

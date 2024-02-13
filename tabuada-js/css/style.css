@@ -15,43 +15,63 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    background-position: center;
+    text-align: center;
 }
 
-h1 {
+h2 {
     margin: 20px;
     color: white;
 }
 
 form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
     background-color: white;
-    padding: 20px 4rem;
-    border-radius: 10px;
-    margin: 20px;
+    width: 300px;
+    padding: 20px 1rem;
+    border-radius: 1rem;
+    margin: 20px auto;
     backdrop-filter: blur(50%);
 }
 
-div#inputs {
- display: flex;
- gap: 70px;
+div.inputs {
+    width: 100px;
 }
+
 
 input, label {
     display: block;
 }
 
-input {
+label {
+    font-size: 15px;
+    padding-bottom: 0.6rem;
+    font-weight: bold;
+}
+
+div.inputs input {
     width: 100px;
     margin-top: 7px;
-    padding: 14px;
+    padding: 0.6rem 0.4rem;
+    text-align: center;
     font-size: 17px;
     border-radius: 5px;
+    border: 1px solid #333;
 }
+
 input[type="submit"] {
     display: block;
     margin: 10px auto;
     background-color: #000;
     color: white;
-    width: 100%;
+    width: 86.5%;
+    max-height: 50px;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: bold;
     cursor: pointer;
 }
 
@@ -65,18 +85,42 @@ div#mutiplication-table h2 {
     color: white;
 }
 
-div#mutiplication-table {
-
-}
-div#result {
+div#multiplication-operations {
+    width: 300px;
     background-color: white;
-    width: 400px;
-    height: 100px;
-    padding: 2rem;
-    border-radius: 10px;
+    border-radius: 1rem;
+    margin: 0 auto;
 }
 
-div#result p{
-    text-align: center;
-    font-size: 17px;
+div#result p {
+    font-size: 15px;
+}
+
+div#multiplication-operations {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 300px;
+    margin: 1rem auto;
+    padding: 2rem 1rem;
+    background-color: white;
+    color: #333;
+    border-radius: 1rem;
+}
+
+div#multiplication-operations div.row {
+    display: flex;
+    justify-content: center;
+    border: 1px solid #ccc;
+    border-bottom: none;
+    padding: 0.5rem;
+    width: 150px;
+}
+
+div#multiplication-operations div.row:last-child {
+    border-bottom: 1px solid #ccc;
+}
+
+div#multiplication-operations div.result {
+    margin-left: 0.4rem;
 }
