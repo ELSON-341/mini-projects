@@ -9,19 +9,19 @@
 </head>
 <body>    
     <h2>Digite o número e confirme para gera uma tabuada</h2>
-    <form>
-            <div class="inputs">
-                <label for="start">Tabuada do:</label>
-                <input type="number" name="start" id="start" placeholder="3" required>
+    <form id="multiplication-form">
+            <div class="form-control">
+                <label for="number">Tabuada do:</label>
+                <input type="number" name="number" id="number" placeholder="3">
             </div>
-            <div class="inputs">
-                <label for="start">Mulplicar até:</label>
-                <input type="number" name="start" id="start" value="10">
+            <div class="form-control">
+                <label for="multiplicator">Mulplicar até:</label>
+                <input type="multiplicator" name="multiplicator" id="multiplicator" value="10">
         </div>
         <input type="submit" value="Calcular">
     </form>
     <div id="multiplication-table">
-        <h2>Tabuada do número: <span></span></h2>
+        <h2 id="multiplication-title">Tabuada do número: <span></span></h2>
         <div id="multiplication-operations">
             <p>Informe um número para calcular uma tabuada...</p>
         </div>
