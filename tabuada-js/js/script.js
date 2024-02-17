@@ -3,6 +3,8 @@ const multicationForm = document.querySelector('#multiplication-form')
 const numberInput = document.querySelector('#number')
 const multiplicationIpunt = document.querySelector('#multiplicator')
 const multiplicatorTable = document.querySelector('#multiplication-operations')
+
+const multicationTitle = document.querySelector('#multiplication-title span')
 // Funções
 const createTable = (number, multiplicatorNumber) => {
     multiplicatorTable.innerHTML = ''
@@ -19,6 +21,7 @@ const createTable = (number, multiplicatorNumber) => {
         const row = htmlTemplemte.querySelector('.row')
         multiplicatorTable.appendChild(row)
     }
+
 }
 // eventos
 multicationForm.addEventListener("submit", (e) => {
@@ -27,11 +30,12 @@ multicationForm.addEventListener("submit", (e) => {
     const multiplicationNumber = +numberInput.value
 
     const multiplicatorNumber = +multiplicationIpunt.value
+
+    multicationTitle.innerHTML = multiplicationNumber
     
     if(!multiplicationNumber || !multiplicatorNumber) {
         window.alert('Preenchar os campos!')
         return
     }
     createTable(multiplicationNumber, multiplicatorNumber)
-
 })
