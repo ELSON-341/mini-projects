@@ -7,13 +7,18 @@ const multiplicatorTable = document.querySelector('#multiplication-operations')
 const createTable = (number, multiplicatorNumber) => {
     multiplicatorTable.innerHTML = ''
 
-    for(let i = 1; i <= multiplicatorNumber; i++){
+    for(let i = 1; i <= multiplicatorNumber; i++) {
         const result = number * i
 
         const templete = `<div class="row">
-            <div class="operation"> ${number} X ${i} = <div/>
-            <class="result">${result}<div/>
+            <div class="operation"> ${number} X ${i} = <span class="result">${result}<span/><div/>
+            
             <div/>`
+
+        const parser = new DOMParser()
+        const htmlTemplemte = parser.parseFromString(templete, "text/html")
+        const row = htmlTemplemte.querySelector('.row')
+        multiplicatorTable.appendChild(row)
     }
 }
 // eventos

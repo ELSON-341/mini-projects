@@ -112,6 +112,7 @@ div#multiplication-operations {
 div#multiplication-operations div.row {
     display: flex;
     justify-content: center;
+    background-color: white;
     border: 1px solid #ccc;
     border-bottom: none;
     padding: 0.5rem;
@@ -122,6 +123,6 @@ div#multiplication-operations div.row:last-child {
     border-bottom: 1px solid #ccc;
 }
 
-div#multiplication-operations div.result {
+/* div#multiplication-operations span.result {
     margin-left: 0.4rem;
-}
+} */
