@@ -12,7 +12,6 @@ const createTable = (number, multiplicatorNumber) => {
 
         const templete = `<div class="row">
             <div class="operation"> ${number} X ${i} = <span class="result">${result}<span/><div/>
-            
             <div/>`
 
         const parser = new DOMParser()
@@ -30,7 +29,7 @@ multicationForm.addEventListener("submit", (e) => {
     const multiplicatorNumber = +multiplicationIpunt.value
     
     if(!multiplicationNumber || !multiplicatorNumber) {
-        window.alert('Preenchar os campo!')
+        window.alert('Preenchar os campos!')
         return
     }
     createTable(multiplicationNumber, multiplicatorNumber)
